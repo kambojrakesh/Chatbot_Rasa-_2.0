@@ -31,7 +31,7 @@ import re
 #         return []
 
 class ActionSearchResults(Action):
-
+		output = "1"
 		def name(self) -> Text:
 			return "action_search_results"
 
@@ -59,7 +59,7 @@ class ActionSearchResults(Action):
 			elif category == 'laptop':
 				output = df[(df['category'] == 'laptop') & (df['price_usd'] <= price) & (df['ram'] >= ram)]
 			print("HERE")
-			print(output.head())
+			#print(output.head())
 			for url in output['product_url']:
 				dispatcher.utter_message(text=url)
 
