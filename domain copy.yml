@@ -52,14 +52,6 @@ actions:
   - utter_ask_camera
   - utter_ask_price
 
-forms:
-  shopping_forms:
-    camera:
-    - type: form_text
-    price:
-    - type: form_text
-    ram:
-    - type: form_text
 
 session_config:
   session_expiration_time: 60
